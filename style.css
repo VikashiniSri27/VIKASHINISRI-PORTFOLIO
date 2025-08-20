@@ -3,17 +3,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #fbc2eb, #a6c1ee); /* soft gradient */
+    background: linear-gradient(to bottom, #ffffff, #e6f0ff); /* light gradient */
     color: #333;
     min-height: 100vh;
 }
 
 /* ==== HEADER ==== */
 header {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
+    background-color: #f8f9fa; /* light gray */
+    color: #333;
     padding: 1em 0;
     text-align: center;
+    border-bottom: 1px solid #ddd;
 }
 
 /* ==== NAVIGATION BAR ==== */
@@ -21,23 +22,26 @@ nav {
     display: flex;
     justify-content: center;
     gap: 20px;
-    background-color: rgba(0,0,0,0.7);
+    background-color: #ffffff; /* white nav */
     padding: 10px 0;
+    border-bottom: 1px solid #ddd;
 }
 
 nav a {
-    color: white;
+    color: #333;
     text-decoration: none;
     padding: 10px 20px;
     transition: background-color 0.3s ease;
+    border-radius: 5px;
 }
 
 nav a:hover {
-    background-color: rgba(255,255,255,0.2);
+    background-color: #f0f0f0;
 }
 
 nav a.active {
-    background-color: rgba(255,255,255,0.3);
+    background-color: #e6f0ff;
+    font-weight: bold;
 }
 nav ul {
     list-style: none;
@@ -52,7 +56,6 @@ nav ul li {
     display: inline;
 }
 
-
 /* ==== MAIN CONTENT ==== */
 main {
     max-width: 1100px;
@@ -62,12 +65,12 @@ main {
 
 /* ==== PROJECT CARDS ==== */
 .project-card {
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: #ffffff;
     margin: 1em auto;
     padding: 1.5em;
     max-width: 500px;
     border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* ==== ABOUT PAGE ==== */
@@ -75,9 +78,9 @@ main {
     max-width: 900px;
     margin: 2em auto;
     padding: 2em;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
 }
 
 /* ==== HOME PAGE ==== */
@@ -101,7 +104,7 @@ main {
 }
 
 .highlight {
-    color: #a64ac9;
+    color: #0056b3;
     font-weight: bold;
 }
 
@@ -114,8 +117,8 @@ main {
     width: 260px;
     height: 260px;
     border-radius: 50%;
-    border: 4px solid white;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    border: 4px solid #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 /* ==== SOCIAL LINKS ==== */
@@ -130,11 +133,12 @@ main {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: black;
-    background: rgba(255, 255, 255, 0.7);
+    color: #333;
+    background: #f8f9fa;
     padding: 6px 10px;
     border-radius: 6px;
     transition: transform 0.3s ease, background-color 0.3s ease;
+    border: 1px solid #ddd;
 }
 
 .social-links a img {
@@ -145,16 +149,17 @@ main {
 
 .social-links a:hover {
     transform: scale(1.05);
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #e6f0ff;
 }
 
 /* ==== CONTACT PAGE ==== */
 form {
     max-width: 400px;
     margin: 2em auto;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
+    border: 1px solid #ddd;
 }
 
 form label {
@@ -177,7 +182,7 @@ form textarea {
 
 form input[type="submit"] {
     margin-top: 15px;
-    background-color: #a6c1ee;
+    background-color: #0056b3;
     color: white;
     font-weight: bold;
     border: none;
@@ -186,16 +191,17 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background-color: #fbc2eb;
+    background-color: #003f80;
 }
 
 /* ==== FOOTER ==== */
 footer {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
+    background-color: #f8f9fa;
+    color: #333;
     text-align: center;
     padding: 1em 0;
     margin-top: 2em;
+    border-top: 1px solid #ddd;
 }
 
 /* ==== RESPONSIVE DESIGN ==== */
@@ -214,4 +220,7 @@ footer {
         gap: 10px;
     }
 }
+
+
+
 
